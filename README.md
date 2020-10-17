@@ -26,5 +26,16 @@ By automating nucleus detection, we could help unlock cures faster—from rare d
 Identifying the cells’ nuclei is the starting point for most analyses because most of the human body’s 30 trillion cells contain a nucleus full of DNA, the genetic code that programs each cell. Identifying nuclei allows researchers to identify each individual cell in a sample, and by measuring how cells react to various treatments, the researcher can understand the underlying biological processes at work.
 
 
-# Aim: 
+## Aim: 
 We created a computer model that can identify a range of nuclei across varied conditions. 
+
+## Result: 
+Model was trained on 670 images and the validated upon 65 images. After training the model for 10 epochs the training accuracy was around 96.29% and the validation accuracy was around 96.36%. Adam optimizer was used and was evaluated on the binary crossentropy loss function. 
+
+### Input Image:
+<img src="https://www.kaggleusercontent.com/kf/44783023/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..E_ENOuW3pDj_WgOL6MrXdg.kTDah2GyyIMYuYz4XQLdMToxyeW2pu5z24L8s9Hi9rg84XwjEQfzzTYMoOEFAUFFW1ZxmQ2WTvFGz-Tlb5uYOQbpu6MvsmtNjB6bU0TSQjdH4hFpEz7VwkjHshidPtzYWe4weE5a2y0CA9VXhPl4-JXIfVmRq250LLtT-lqrdemk3GbpNMTA5XJ5wGR4jiOhEO-jRxNmh9_MWDxGA3C6OaA7wcLKiNFYhh-VUEdcgcz4g-EQ2seVkeLiDyTBHSjMrpNJOSrwNlwlUdzIKOms4frPpd4KM4MWk00VUMucDD6znPij4n1KmdQS_OlH11CPN3a58KGsrhiO_XazNkoqlFxelU4HGqQw6qQeLZ_kUDXkg5aMCOfJo9l1qCfxWlXq_m9vpuqht8JLbq0qWAwceHGvJ0bmqaAKi19iduEJM4gerEzWjkVH5rgbHnGSg5kpMgrYS-miBC9N2EKOT8H6oBFSiwJp28PZ6RZLe2XuVLP-2M7AnGTaIVBIFyZ__g8UWLmxoz6S1HNs-Dk--dnu7v9sWCuuk3X46o7ruzA5EAxDS2L6pfRvN5WS0hqdSaYCGmPGCfZqn63pP8VZyh4wKiGpkuAlxYal420iYuRl06CO1CeZMM0nzrBuVI6zsLXdOWu9DlkyiZz4vLy7VEhAbQ.aS1gn_mrtmr5FZrkqZcDaw/__results___files/__results___27_0.png">
+
+### Output Image: 
+<img src="https://www.kaggleusercontent.com/kf/44783023/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..E_ENOuW3pDj_WgOL6MrXdg.kTDah2GyyIMYuYz4XQLdMToxyeW2pu5z24L8s9Hi9rg84XwjEQfzzTYMoOEFAUFFW1ZxmQ2WTvFGz-Tlb5uYOQbpu6MvsmtNjB6bU0TSQjdH4hFpEz7VwkjHshidPtzYWe4weE5a2y0CA9VXhPl4-JXIfVmRq250LLtT-lqrdemk3GbpNMTA5XJ5wGR4jiOhEO-jRxNmh9_MWDxGA3C6OaA7wcLKiNFYhh-VUEdcgcz4g-EQ2seVkeLiDyTBHSjMrpNJOSrwNlwlUdzIKOms4frPpd4KM4MWk00VUMucDD6znPij4n1KmdQS_OlH11CPN3a58KGsrhiO_XazNkoqlFxelU4HGqQw6qQeLZ_kUDXkg5aMCOfJo9l1qCfxWlXq_m9vpuqht8JLbq0qWAwceHGvJ0bmqaAKi19iduEJM4gerEzWjkVH5rgbHnGSg5kpMgrYS-miBC9N2EKOT8H6oBFSiwJp28PZ6RZLe2XuVLP-2M7AnGTaIVBIFyZ__g8UWLmxoz6S1HNs-Dk--dnu7v9sWCuuk3X46o7ruzA5EAxDS2L6pfRvN5WS0hqdSaYCGmPGCfZqn63pP8VZyh4wKiGpkuAlxYal420iYuRl06CO1CeZMM0nzrBuVI6zsLXdOWu9DlkyiZz4vLy7VEhAbQ.aS1gn_mrtmr5FZrkqZcDaw/__results___files/__results___27_1.png">
+
+## Tech Stack: Python, Jupyter Notebook, Tensorflow, skimage
